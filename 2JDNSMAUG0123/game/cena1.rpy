@@ -14,14 +14,14 @@ label: cena1
     show teto do quarto
     with dissolve(dissolve_time=0.5)  # dissolve rápido
 
-    show espelho do banheiro
+    show espelho do banheiro #ele se ve escovando os dentes
     with dissolve(dissolve_time=0.5)  # dissolve rápido
 
     show sala de estar
     show mae in left
 
     mae "chegou o moço de novo, tive que despistá-lo dessa vez"
-    ia "sua conta de lua já passou de 60 dias de atraso"
+    ia "sua conta de luz já passou de 60 dias de atraso"
     principal "tô mais preocupado com seu remédio... a Jana pagou o aluguel?"
     mae "você ainda é ingênuo de achar que ela vai pagar algo?"
     principal "...é, eu preciso me virar"

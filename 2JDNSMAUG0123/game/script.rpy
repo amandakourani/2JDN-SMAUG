@@ -6,7 +6,7 @@
 label start_menu:
     menu:
         "INICIO"
-            jump cena1
+            jump introducao
         "REALIZADORES"
             jump creditos
         "SOBRE O JOGO"
