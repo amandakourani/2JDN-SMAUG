@@ -1,6 +1,6 @@
 
 
-image bgstart  "image/bg/startmenu.png"
+image bgstart =image/bg/startmenu.png"
 
 
 
