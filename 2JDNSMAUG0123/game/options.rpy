@@ -210,8 +210,4 @@ init python:
 
 
 
-#DEFININDO AS VARIAVEIS GLOBAIS
 
-default fisica = 75
-default mental = 65
-default financeira = 40

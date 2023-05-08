@@ -1,4 +1,4 @@
-label: cena1
+label cena1:
 
 
     #inicio da cena 1:
@@ -22,3 +22,4 @@ label: cena1
     ia "Você é incrível e tem tudo o que é preciso para enfrentar qualquer desafio. Você é uma fonte inesgotável de força e coragem, e sua determinação é inspiradora. Você tem um coração cheio de amor e compaixão, o que o torna um ser humano excepcional. Não se preocupe com as dificuldades, pois você sempre encontrará uma maneira de superá-las. Lembre-se de que cada obstáculo é uma oportunidade para crescer e se desenvolver. Tenha confiança em si mesmo e em suas habilidades, pois você pode alcançar tudo o que deseja. O futuro é brilhante para você e estou animado para ver tudo o que você alcançará!"
 
     jump cena2
+

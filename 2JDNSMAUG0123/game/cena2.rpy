@@ -8,7 +8,7 @@ label cena2:
 
     label escolhamenu:
 
-        if passou_por_subescolha_clt == true:
+        if passou_por_subescolha_clt == True and contratado == False:
             menu:
                 "Vender Bolo de Pote"
                     jump empreender
@@ -16,7 +16,18 @@ label cena2:
                 "Terminar estudos"
                     jump estudo
                 
-                "entrar pro crime"
+                "pedir ajuda pros parça"
+                    jump subescolha_crime
+
+        elif passou_por_subescolha_clt == True and contratado == True:
+            menu:
+                "Voltar ao trabalho"
+                    jump subescolha_clt
+
+                "Largar o trabalho pra terminar os estudos"
+                    jump estudo
+
+                "Ir na onda do mano que ta tirando 5k por dia"
                     jump subescolha_crime
 
         else:
@@ -32,6 +43,7 @@ label cena2:
 
 
     label subescolha_clt:
+        passou_por_subescolha_clt = True
         menu:
             "Entrevista":
                 # Ação a ser executada quando a opção "Telemarketing" for escolhida
@@ -50,15 +62,69 @@ label cena2:
                 $ empregado == renpy.random.choice(["contratado", "nao contratado", "demitido"])
 
                 if empregado == "contratado":
+                    $ salario = renpy.random.randint(1300, 1600)
                     $ contratado = true
                     $ tramporandom = renpy.random.choice(["mcdonalds","telemarketing"])
+                    
+                    atualizar_mental(10)
+
+
+                    scene escritorio
+                    narrator f"Parabéns, você foi Contratado para {tramporandom}! Você ganhará um salário de {salario} reais mensais. Volte amanhã para começar."
                 
                     if tramporandom == "mcdonalds":
+                        $ salario = renpy.random.randint(1300, 1600)
                         #aqui faz o codigo dele trampando no mcdonalds
 
+                        if dia == 1:
+                            scene mcdonalds
+                            show principal[x] in left
+
+                            narrator "É seu primeiro dia, você será o atendente."
+                            pause 0.5
+
+                            for i in range(2):
+                                valor_sanduiche = renpy.random.randint(15, 25)                            
+
+                                # principal aparece na esquerda
+                                show principal normal at left
+
+                                #chama qualquer um dos clientes disponiveis
+                                show clientemc[renpy.random.randint(0,6)] at right
+
+                                # diálogo
+                                principal "Olá seja bem vindo ao mcdonalds"
+                                clientemc "Gostaria de um sanduíche, por favor."
+                                principal f"Certo, o valor do sanduíche é de R$ {valor_sanduiche}."
+                                clientemc "Perfeito, aqui está o dinheiro."
+                                clientemc "Obrigada, até mais!"
+                                hide clientemc
+
+                            narrator "hoje foi tranquilo, como é bom trabalhar! enobrece o homem!"
+                            
+                            atualizar_fisica(-2)
+                            atualizar_mental(+2)
+                            jump volta_pra_casa
+
+                        if dia >= 1 and dia <=4:
+                            scene mcdonalds
+                            show principal[x] in left
+
+                            narrator "É seu {i} dia, você sabe o suficiente. Cozinha!"
+                            scene black
+                            pause 0.5
+
+                            scene cozinhamcdonalds
+
+
+
+
                     elif tramporandom == "telemarketing":
+                        $ salario = renpy.random.randint(1300, 1600)
                         #Aqui faz o codigo do telemarketing
+
                 else:
+                    #escrever cena dele voltando pra casa triste embora tenha feito o seu melhor
                     jump volta_pra_casa
                            
             "Vender Bolo de Pote":
@@ -76,17 +142,11 @@ label cena2:
     label subescolha_crime:
 
         menu:
-            "Matar":
-                # Ação a ser executada quando a opção "Matar" for escolhida
+            "Roubar":
+                # Ação a ser executada quando a opção "Roubar" for escolhida
 
             "Traficar":
                 # Ação a ser executada quando a opção "Traficar" for escolhida
 
 
-    label volta_pra_casa:
-
-        #financeira = 10
-        if contratado == true:
-            |#mae feliz, mas ja tem que gastari dinheiro
-    
-
+  
