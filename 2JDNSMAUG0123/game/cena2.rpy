@@ -42,111 +42,117 @@ label cena2:
                     jump subescolha_crime
 
 
-    label subescolha_clt:
-        passou_por_subescolha_clt = True
-        menu:
-            "Entrevista":
-                # Ação a ser executada quando a opção "Telemarketing" for escolhida
-                # entrevista
+label subescolha_clt:
+    passou_por_subescolha_clt = True
+    menu:
+        "Entrevista":
+            # Ação a ser executada quando a opção "Telemarketing" for escolhida
+            # entrevista
+            scene escritorio
+
+            show principal[2] in left
+
+            narrator "Qual animal você seria na natureza?"
+            input 
+            narrator "Cite 1 defeito seu"
+            input
+            narrator "E 1 qualidade?"
+            input
+            
+            $ empregado == renpy.random.choice(["contratado", "nao contratado", "demitido"])
+
+            if empregado == "contratado":
+                $ salario = renpy.random.randint(1300, 1600)
+                $ contratado = true
+                $ tramporandom = renpy.random.choice(["mcdonalds","telemarketing"])
+                
+                atualizar_mental(10)
+
+
                 scene escritorio
-
-                show principal[2] in left
-
-                narrator "Qual animal você seria na natureza?"
-                input 
-                narrator "Cite 1 defeito seu"
-                input
-                narrator "E 1 qualidade?"
-                input
-                
-                $ empregado == renpy.random.choice(["contratado", "nao contratado", "demitido"])
-
-                if empregado == "contratado":
+                narrator f"Parabéns, você foi Contratado para {tramporandom}! Você ganhará um salário de {salario} reais mensais. Volte amanhã para começar."
+            
+                if tramporandom == "mcdonalds":
                     $ salario = renpy.random.randint(1300, 1600)
-                    $ contratado = true
-                    $ tramporandom = renpy.random.choice(["mcdonalds","telemarketing"])
-                    
-                    atualizar_mental(10)
+                    #aqui faz o codigo dele trampando no mcdonalds
 
+                    if dia == 1:
+                        scene mcdonalds
+                        show principal[x] in left
 
-                    scene escritorio
-                    narrator f"Parabéns, você foi Contratado para {tramporandom}! Você ganhará um salário de {salario} reais mensais. Volte amanhã para começar."
-                
-                    if tramporandom == "mcdonalds":
-                        $ salario = renpy.random.randint(1300, 1600)
-                        #aqui faz o codigo dele trampando no mcdonalds
+                        narrator "É seu primeiro dia, você será o atendente."
+                        pause 0.5
 
-                        if dia == 1:
-                            scene mcdonalds
-                            show principal[x] in left
+                        for i in range(2):
+                            valor_sanduiche = renpy.random.randint(15, 25)                            
 
-                            narrator "É seu primeiro dia, você será o atendente."
-                            pause 0.5
+                            # principal aparece na esquerda
+                            show principal normal at left
 
-                            for i in range(2):
-                                valor_sanduiche = renpy.random.randint(15, 25)                            
+                            #chama qualquer um dos clientes disponiveis
+                            show clientemc[renpy.random.randint(0,6)] at right
 
-                                # principal aparece na esquerda
-                                show principal normal at left
+                            # diálogo
+                            principal "Olá seja bem vindo ao mcdonalds"
+                            clientemc "Gostaria de um sanduíche, por favor."
+                            principal f"Certo, o valor do sanduíche é de R$ {valor_sanduiche}."
+                            clientemc "Perfeito, aqui está o dinheiro."
+                            clientemc "Obrigada, até mais!"
+                            hide clientemc
 
-                                #chama qualquer um dos clientes disponiveis
-                                show clientemc[renpy.random.randint(0,6)] at right
+                        narrator "hoje foi tranquilo, como é bom trabalhar! enobrece o homem!"
+                        
+                        atualizar_fisica(-2)
+                        atualizar_mental(+2)
+                        jump volta_pra_casa
 
-                                # diálogo
-                                principal "Olá seja bem vindo ao mcdonalds"
-                                clientemc "Gostaria de um sanduíche, por favor."
-                                principal f"Certo, o valor do sanduíche é de R$ {valor_sanduiche}."
-                                clientemc "Perfeito, aqui está o dinheiro."
-                                clientemc "Obrigada, até mais!"
-                                hide clientemc
+                    if dia >= 1 and dia <=4:
+                        scene mcdonalds
+                        show principal[x] in left
 
-                            narrator "hoje foi tranquilo, como é bom trabalhar! enobrece o homem!"
-                            
-                            atualizar_fisica(-2)
-                            atualizar_mental(+2)
-                            jump volta_pra_casa
+                        narrator "É seu {i} dia, você sabe o suficiente. Cozinha!"
+                        scene black
+                        pause 0.5
 
-                        if dia >= 1 and dia <=4:
-                            scene mcdonalds
-                            show principal[x] in left
-
-                            narrator "É seu {i} dia, você sabe o suficiente. Cozinha!"
-                            scene black
-                            pause 0.5
-
-                            scene cozinhamcdonalds
+                        scene cozinhamcdonalds
+                        show principal[x] in left
 
 
 
 
-                    elif tramporandom == "telemarketing":
-                        $ salario = renpy.random.randint(1300, 1600)
-                        #Aqui faz o codigo do telemarketing
-
-                else:
-                    #escrever cena dele voltando pra casa triste embora tenha feito o seu melhor
-                    jump volta_pra_casa
-                           
-            "Vender Bolo de Pote":
-                jump empreender
-
-    label empreender:
-        #script da venda de bolo de pote
 
 
-    label estudo:
 
-        # Ação a ser executada quando a opção "terminar estudo" for escolhida
+                elif tramporandom == "telemarketing":
+                    #$ salario = renpy.random.randint(1300, 1600)
+                    #Aqui faz o codigo do telemarketing
+
+            else:
+                #escrever cena dele voltando pra casa triste embora tenha feito o seu melhor
+                jump volta_pra_casa
+                        
+        "Vender Bolo de Pote":
+            jump empreender
+
+label empreender:
+    #script da venda de bolo de pote
 
 
-    label subescolha_crime:
+label estudo:
+    # Ação a ser executada quando a opção "terminar estudo" for escolhida
 
-        menu:
-            "Roubar":
-                # Ação a ser executada quando a opção "Roubar" for escolhida
 
-            "Traficar":
-                # Ação a ser executada quando a opção "Traficar" for escolhida
+label subescolha_crime:
+
+    if passou_por_subescolha_clt == True:
+        jump demissao
+        
+    menu:
+        "Roubar":
+            # Ação a ser executada quando a opção "Roubar" for escolhida
+
+        "Traficar":
+            # Ação a ser executada quando a opção "Traficar" for escolhida
 
 
   
