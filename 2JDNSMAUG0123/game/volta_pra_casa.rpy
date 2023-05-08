@@ -5,7 +5,6 @@ label volta_pra_casa:
         #financeira = 10
         if contratado == true:
             |#mae feliz, mas ja tem que gastari dinheiro
-            financeira = financeira-10
 
             if dia >=
     

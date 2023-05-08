@@ -10,6 +10,8 @@ image teto do quarto = "images/bg/teto do quarto.png"
 image bgstart = "image/bg/startmenu.png"
 image clientemc = ["images/personagens/cliente1costas.png", "images/personagens/cliente2costas.png", "images/personagens/cliente3costas.png"]
 image cozinhamcdonalds = "images/bg/cozinhamcdonalds.png"
+image rua = "image/bg/rua.png"
+image escritorio = "image/bg/escritorio.png"
 
 default passou_por_subescolha_clt = False
 default contratado = False
