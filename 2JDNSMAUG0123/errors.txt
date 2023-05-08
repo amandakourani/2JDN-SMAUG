@@ -1,0 +1,34 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/cena1.rpy", line 1: expected 'label_name_declare' not found.
+    label: cena1
+         ^
+
+File "game/cena2.rpy", line 8: expected 'label_name_declare' not found.
+    label menu:
+         ^
+
+File "game/cena2.rpy", line 22: choice menuitem expects a non-empty block.
+    "Telemarketing":
+                    ^
+
+File "game/cena2.rpy", line 37: choice menuitem expects a non-empty block.
+    "Matar":
+            ^
+
+File "game/introducao.rpy", line 4: end of line expected.
+    with dissolve 1.0
+                  ^
+
+File "game/introducao.rpy", line 6: end of line expected.
+    with dissolve 2.5
+                  ^
+
+File "game/start_menu.rpy", line 3: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+    image bgstart =image/bg/startmenu.png"
+
+Ren'Py Version: Ren'Py 7.5.3.22090809
+Sun May  7 18:45:19 2023

@@ -1,0 +1,37 @@
+ ../.bash_history
+        ../.eclipse/
+        ../.gitconfig
+        ../.katalon/
+        ../.lesshst
+        ../.receitanet/
+        ../.rfb/
+        ../.swt/
+        ../.vscode/
+        .vscode/
+        errors.txt
+        log.txt
+        ../3D Objects/
+        ../AppData/
+        ../Contacts/
+        ../Desktop/
+        ../Documents/
+        ../Downloads/
+        ../Favorites/
+        ../IntelGraphicsProfiles/
+        ../Katalon Studio/
+        ../Links/
+        ../Music/
+        ../NTUSER.DAT
+        ../NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+        ../NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+        ../NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+        ../OneDrive/
+        ../Pictures/
+        ../Saved Games/
+        ../Searches/
+        ../Videos/
+        ../aporradojogo/
+        ../ntuser.dat.LOG1
+        ../ntuser.dat.LOG2
+        ../ntuser.ini
+        ../renpy-7.5.3-sdk/

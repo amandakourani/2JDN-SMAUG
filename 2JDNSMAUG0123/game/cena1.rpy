@@ -1,13 +1,5 @@
 label: cena1
-# Declarando imagens e background
 
-    image ia = "images/personagens/ia.png"
-    image principal = "images/personagens/principal.png"
-    image mae = "images/personagens/mae.png"
-    image teto do quarto = "images/bg/teto do quarto.png"
-    image espelho do banheiro = "images/bg/espelho do banheiro.png"
-    image sala de estar = "images/bg/sala de estar.png"
-    image teto do quarto = "images/bg/teto do quarto.png"
 
     #inicio da cena 1:
 
@@ -19,6 +11,7 @@ label: cena1
 
     show sala de estar
     show mae in left
+    show principal[1] in right
 
     mae "chegou o moço de novo, tive que despistá-lo dessa vez"
     ia "sua conta de luz já passou de 60 dias de atraso"
