@@ -23,3 +23,7 @@ label volta_pra_casa:
         print "Conta de agua -5"
         atualizar_financeiro(-20)
         print "Aluguel -20"
+
+
+
+    jump escolhamenu

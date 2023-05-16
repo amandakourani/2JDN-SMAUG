@@ -82,7 +82,7 @@ label subescolha_clt:
 
                         for i in range(2):
 
-                            if i ==1
+                            if i == 1
                                 valor_sanduiche = renpy.random.randint(15, 25)                            
 
                                 # principal aparece na esquerda
