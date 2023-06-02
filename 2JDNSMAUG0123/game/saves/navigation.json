@@ -1,1 +1,1 @@
-{"location": {"callable": {}, "screen": {}, "define": {}, "transform": {}, "label": {"cena1": ["game/cena1.rpy", 1]}}, "size": [1920, 1080], "name": "", "version": "", "error": true}
+{"error": true, "size": [1920, 1080], "name": "", "version": "", "location": {"label": {"cena1": ["game/cena1.rpy", 1]}, "define": {}, "screen": {}, "transform": {}, "callable": {}}}
