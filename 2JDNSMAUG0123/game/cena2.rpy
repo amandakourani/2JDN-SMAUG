@@ -2,29 +2,29 @@ label cena2:
    
     show rua
     ia "sei que está triste mas não deixe a vida te abalar! Você ainda tem a oportunidade de desenhar seu próprio destino! A meritocracia americana pe maravilhosa, tanto que você pode escolher as opções a seguir: "
-    
+
     label escolhamenu:
 
         if passou_por_subescolha_clt == True and contratado == False:
             menu:
-                "Vender Bolo de Pote":
+                "Vender Bolo de Pote"
                     jump empreender
                 
-                "Terminar estudos":
+                "Terminar estudos"
                     jump estudo
                 
-                "pedir ajuda pros parça":
+                "pedir ajuda pros parça"
                     jump subescolha_crime
 
         elif passou_por_subescolha_clt == True and contratado == True:
             menu:
-                "Voltar ao trabalho":
+                "Voltar ao trabalho"
                     jump subescolha_clt
 
-                "Largar o trabalho pra terminar os estudos":
+                "Largar o trabalho pra terminar os estudos"
                     jump estudo
 
-                "Ir na onda do mano que ta tirando 5k por dia":
+                "Ir na onda do mano que ta tirando 5k por dia"
                     jump subescolha_crime
 
         else:
@@ -135,36 +135,107 @@ label subescolha_clt:
                         show principal[x] in left
 
 
-                elif tramporandom == "telemarketing":
+
+elif tramporandom == "telemarketing":
                     #$ salario = renpy.random.randint(1300, 1600)
                     #Aqui faz o codigo do telemarketing
 
+if dia == 1:
+                        scene telemarketing
+                        show principal[x] in left
+
+                        narrator "É seu primeiro dia, você será atendente SAC."
+                        pause 0.5
+
+                        for i in range(2):
+
+                            if i == 1
+                              #tirar dúvida do código com a amanda
+
+                              # principal aparece na direita
+                                show principal normal at right
+
+                                #atende sua primeira ligação
+                                show clientemultilaser[renpy.random.randint(0,6)] at left
+
+                                # diálogo
+                                principal "Central de Relacionamento, Multilaser! Bom dia, como posso te ajudar?"
+                                clientemultilaser "Olá, então comprei um mouse e ele parou de funcionar"
+                                principal "Certo! Vou fazer algumas perguntas padrões, para descobrirmos o que ocorreu e seguir com a melhor forma de garantia. O produto sofreu queda ou teve contato com água?"
+                                clientemultilaser "Não, inclusive já fiz os testes do site, e ele continua sem funcionar."
+                                principal "Ok, lamento que isto tenha ocorrido com seu mouse, mas pode ficar tranquilo pois seguiremos com a troca expressa, onde seu produto será substituído por um novo!"
+                                clientemultilaser "Perfeito, muito obrigado! Tenha um ótimo dia."
+                                hide clientemultilaser
+
+
+                                # principal aparece na esquerda
+                                show principal normal at left
+
+                                #atende sua terceira ligação do dia
+                                show clientemultilaserputo[renpy.random.randint(0,6)] at right
+
+                                # diálogo
+                                principal "Central de Relacionamento, Multilaser! Bom dia, como posso ajudar?"
+                                clientemultilaserputo "Péssimo dia, escuta aqui, comprei o tablet de vocês à 3 meses para dar pra minha filha e a bateria desta porcaria, inchou tanto que está a ponto de explodir, e aí vai fazer o que?"
+                                principal f"Ok senhor, pode ficar tranquilo pois..."
+                                clientemultilaserputo "Tranquilo??? Como você me quer tranquilo com uma situação dessas, eu quero meu dinheiro de volta!"
+                                principal "Senhor, peço que mantenha a calma pois estou tentando auxiliá-lo."
+                                clientemultilaserputo "Já vi que aqui não vou resolver nada, pode deixar que vou no Procon e no Celso Russomano."
+                                principal "Senhor..."
+                                telefone "tu.tu.tu.tu.tu.tu.tu"
+                                atualizar_mental(-8)
+                                hide clientemultilaserputo
+
+                    ia "Mais um dia maravilhosos concluído! Já posso sentir o cheiro do sucesso emanando de você!"
+
+                   atualizar_fisica(-4)
+
+                        jump volta_pra_casa
+
+                    if dia >= 1 and dia <=4:
+                        scene telemarketing
+                        show principal[x] in left
+
+                        narrator "É seu {i} dia, você sabe o suficiente. Agora vai atender telefone e chat!"
+                        scene black
+                        pause 0.5
+
+                        scene sac
+                        show principal[x] in left
+
+                        for i in range(2):
+            if i == 1:
+                show principal normal at right
+                chefe "Você precisa trabalhar mais rápido, tem muitos clientes na fila, puxa mais um!"
+
+                menu:
+                    "Trabalhar mais rápido e ficar até mais tarde para ajudar a central a zerar a fila. (+10 em financeiro, -5 em saúde)":
+                        # Ação a ser executada quando a opção "Trabalhar mais rápido" for escolhida
+                        atualizar_financeiro(10)
+                        atualizar_saude(-5)
+
+                    "Recusar a pressão do chefe e manter o ritmo normal. (+5 em saúde)":
+                        # Ação a ser executada quando a opção "Manter o ritmo normal" for escolhida
+                        atualizar_saude(5)
+
+                hide chefe
+
             else:
-                #escrever cena dele voltando pra casa triste embora tenha feito o seu melhor
-                jump volta_pra_casa
-                        
-        "Vender Bolo de Pote":
-            jump empreender
+                label volta_pra_casa:
+    scene casa
+    show principal[3] in left
 
-label empreender:
-    #script da venda de bolo de pote
+    narrator "Você volta para casa cansado e desanimado, mesmo tendo feito o seu melhor no trabalho. A situação financeira da sua família continua difícil e sua mãe precisa de tratamento médico."
 
+    principal "É tão injusto... Trabalho tanto, me esforço, mas parece que nunca é o suficiente."
 
-label estudo:
-    # Ação a ser executada quando a opção "terminar estudo" for escolhida
+    ia "Não reclame garoto, não vê a sorte que tem de estar trabalhando e ter a oportunidade de realizar seus sonhos? Quem quer vai atrás e não reclama, se você trabalha você consegue viver e investir BASTA QUERER, AGORA VÁ DORMIR PARA TRABALHAR AMANHÃ!"
 
+    # Atualizar variáveis do personagem (exemplo)
+    $ saude -= 5
+    $ financeiro += 10
 
-label subescolha_crime:
-
-    if passou_por_subescolha_clt == True:
-        jump demissao
-        
-    menu:
-        "Roubar":
-            # Ação a ser executada quando a opção "Roubar" for escolhida
-
-        "Traficar":
-            # Ação a ser executada quando a opção "Traficar" for escolhida
-
-
-  
+    if financeiro >= 0 and saude >= 0 and familia >= 0:
+        jump suicidio
+    else:
+        jump continuar_jogo
