@@ -1,11 +1,7 @@
 ﻿
 # Declarando imagens e background
 image ia = "images/personagens/ia.png"
-<<<<<<< HEAD
 image principal = ["images/personagens/principal_normal.png", "images/personagens/principal_desesperado.png", "images/personagens/principal_dor_de_cabeca.png", "images/personagens/principal_nervoso.png", "images/personagens/principal_entrevista.png", "images/personagens/principal_demitido.png", "images/personagens/principal_cozinhando.png", "images/personagens/principal_uniforme.png", "images/personagens/principaldecostas.jpg", "images/personagens/principal_contratado.png", "images/personagens/principal_atendente_1.png", "images/personagens/principal_atendente_2.png", "images/personagens/principal_escovando_os_dentes.jpg", "images/personagens/principal_final.jpg"]
-=======
-image principal = ["images/personagens/principal.png", "images/personagens/principaldecostas.png", "image/personagens/principalentrevistado.png", "image/personagens/principalcozinhamc.png"]
->>>>>>> ceb87adf34c275dbaa4f1fa0bce91e15a07d9ab4
 image mae = "images/personagens/mae.png"
 image teto_do_quarto = "images/bg/teto do quarto.png"
 image espelho do banheiro = "images/bg/espelho do banheiro.png"
