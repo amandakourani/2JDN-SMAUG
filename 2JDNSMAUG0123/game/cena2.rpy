@@ -2,7 +2,7 @@ label cena2:
    
     show rua
     ia "sei que está triste mas não deixe a vida te abalar! Você ainda tem a oportunidade de desenhar seu próprio destino! A meritocracia americana pe maravilhosa, tanto que você pode escolher as opções a seguir: "
-
+    
     label escolhamenu:
 
         if passou_por_subescolha_clt == True and contratado == False:
