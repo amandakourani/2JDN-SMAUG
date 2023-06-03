@@ -7,24 +7,24 @@ label cena2:
 
         if passou_por_subescolha_clt == True and contratado == False:
             menu:
-                "Vender Bolo de Pote"
+                "Vender Bolo de Pote":
                     jump empreender
                 
-                "Terminar estudos"
+                "Terminar estudos":
                     jump estudo
                 
-                "pedir ajuda pros parça"
+                "pedir ajuda pros parça":
                     jump subescolha_crime
 
         elif passou_por_subescolha_clt == True and contratado == True:
             menu:
-                "Voltar ao trabalho"
+                "Voltar ao trabalho":
                     jump subescolha_clt
 
-                "Largar o trabalho pra terminar os estudos"
+                "Largar o trabalho pra terminar os estudos":
                     jump estudo
 
-                "Ir na onda do mano que ta tirando 5k por dia"
+                "Ir na onda do mano que ta tirando 5k por dia":
                     jump subescolha_crime
 
         else:
@@ -40,7 +40,8 @@ label cena2:
 
 
 label subescolha_clt:
-    passou_por_subescolha_clt = True
+    $ passou_por_subescolha_clt = True
+    
     menu:
         "Entrevista":
             # Ação a ser executada quando a opção "Telemarketing" for escolhida
@@ -98,6 +99,7 @@ label subescolha_clt:
                                 clientemc "Perfeito, aqui está o dinheiro."
                                 clientemc "Obrigada, até mais!"
                                 hide clientemc
+                                
                             
                             else:
                                 valor_sanduiche = renpy.random.randint(15, 25)                            
@@ -134,61 +136,59 @@ label subescolha_clt:
                         scene cozinhamcdonalds
                         show principal[x] in left
 
+            elif tramporandom == "telemarketing":
+                                #$ salario = renpy.random.randint(1300, 1600)
+                                #Aqui faz o codigo do telemarketing
+
+                if dia == 1:
+                    scene telemarketing
+                    show principal[x] in left
+
+                    narrator "É seu primeiro dia, você será atendente SAC."
+                    pause 0.5
+
+                    for i in range(2):
+
+                        if i == 1
+                            #tirar dúvida do código com a amanda
+
+                            # principal aparece na direita
+                            show principal normal at right
+
+                            #atende sua primeira ligação
+                            show clientemultilaser[renpy.random.randint(0,6)] at left
+
+                            # diálogo
+                            principal "Central de Relacionamento, PoneiLaser! Bom dia, como posso te ajudar?"
+                            clientemultilaser "Olá, então comprei um mouse e ele parou de funcionar"
+                            principal "Certo! Vou fazer algumas perguntas padrões, para descobrirmos o que ocorreu e seguir com a melhor forma de garantia. O produto sofreu queda ou teve contato com água?"
+                            clientemultilaser "Não, inclusive já fiz os testes do site, e ele continua sem funcionar."
+                            principal "Ok, lamento que isto tenha ocorrido com seu mouse, mas pode ficar tranquilo pois seguiremos com a troca expressa, onde seu produto será substituído por um novo!"
+                            clientemultilaser "Perfeito, muito obrigado! Tenha um ótimo dia."
+                            hide clientemultilaser
 
 
-elif tramporandom == "telemarketing":
-                    #$ salario = renpy.random.randint(1300, 1600)
-                    #Aqui faz o codigo do telemarketing
+                            # principal aparece na esquerda
+                            show principal normal at left
 
-if dia == 1:
-                        scene telemarketing
-                        show principal[x] in left
+                            #atende sua terceira ligação do dia
+                            show clientemultilaserputo[renpy.random.randint(0,6)] at right
 
-                        narrator "É seu primeiro dia, você será atendente SAC."
-                        pause 0.5
+                            # diálogo
+                            principal "Central de Relacionamento, Multilaser! Bom dia, como posso ajudar?"
+                            clientemultilaserputo "Péssimo dia, escuta aqui, comprei o tablet de vocês à 3 meses para dar pra minha filha e a bateria desta porcaria, inchou tanto que está a ponto de explodir, e aí vai fazer o que?"
+                            principal f"Ok senhor, pode ficar tranquilo pois..."
+                            clientemultilaserputo "Tranquilo??? Como você me quer tranquilo com uma situação dessas, eu quero meu dinheiro de volta!"
+                            principal "Senhor, peço que mantenha a calma pois estou tentando auxiliá-lo."
+                            clientemultilaserputo "Já vi que aqui não vou resolver nada, pode deixar que vou no Procon e no Celso Russomano."
+                            principal "Senhor..."
+                            telefone "tu.tu.tu.tu.tu.tu.tu"
+                            atualizar_mental(-8)
+                            hide clientemultilaserputo
 
-                        for i in range(2):
+                        ia "Mais um dia maravilhosos concluído! Já posso sentir o cheiro do sucesso emanando de você!"
 
-                            if i == 1
-                              #tirar dúvida do código com a amanda
-
-                              # principal aparece na direita
-                                show principal normal at right
-
-                                #atende sua primeira ligação
-                                show clientemultilaser[renpy.random.randint(0,6)] at left
-
-                                # diálogo
-                                principal "Central de Relacionamento, Multilaser! Bom dia, como posso te ajudar?"
-                                clientemultilaser "Olá, então comprei um mouse e ele parou de funcionar"
-                                principal "Certo! Vou fazer algumas perguntas padrões, para descobrirmos o que ocorreu e seguir com a melhor forma de garantia. O produto sofreu queda ou teve contato com água?"
-                                clientemultilaser "Não, inclusive já fiz os testes do site, e ele continua sem funcionar."
-                                principal "Ok, lamento que isto tenha ocorrido com seu mouse, mas pode ficar tranquilo pois seguiremos com a troca expressa, onde seu produto será substituído por um novo!"
-                                clientemultilaser "Perfeito, muito obrigado! Tenha um ótimo dia."
-                                hide clientemultilaser
-
-
-                                # principal aparece na esquerda
-                                show principal normal at left
-
-                                #atende sua terceira ligação do dia
-                                show clientemultilaserputo[renpy.random.randint(0,6)] at right
-
-                                # diálogo
-                                principal "Central de Relacionamento, Multilaser! Bom dia, como posso ajudar?"
-                                clientemultilaserputo "Péssimo dia, escuta aqui, comprei o tablet de vocês à 3 meses para dar pra minha filha e a bateria desta porcaria, inchou tanto que está a ponto de explodir, e aí vai fazer o que?"
-                                principal f"Ok senhor, pode ficar tranquilo pois..."
-                                clientemultilaserputo "Tranquilo??? Como você me quer tranquilo com uma situação dessas, eu quero meu dinheiro de volta!"
-                                principal "Senhor, peço que mantenha a calma pois estou tentando auxiliá-lo."
-                                clientemultilaserputo "Já vi que aqui não vou resolver nada, pode deixar que vou no Procon e no Celso Russomano."
-                                principal "Senhor..."
-                                telefone "tu.tu.tu.tu.tu.tu.tu"
-                                atualizar_mental(-8)
-                                hide clientemultilaserputo
-
-                    ia "Mais um dia maravilhosos concluído! Já posso sentir o cheiro do sucesso emanando de você!"
-
-                   atualizar_fisica(-4)
+                         atualizar_fisica(-4)
 
                         jump volta_pra_casa
 
