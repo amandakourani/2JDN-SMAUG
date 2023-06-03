@@ -1,7 +1,7 @@
 ﻿
 # Declarando imagens e background
 image ia = "images/personagens/ia.png"
-image principal = ["images/personagens/principal.png", "images/personagens/principaldecostas.png", "image/personagens/principalentrevistado.png"]
+image principal = ["images/personagens/principal_normal.png", "images/personagens/principal_desesperado.png", "images/personagens/principal_dor_de_cabeca.png", "images/personagens/principal_nervoso.png", "images/personagens/principal_entrevista.png", "images/personagens/principal_demitido.png", "images/personagens/principal_cozinhando.png", "images/personagens/principal_uniforme.png", "images/personagens/principaldecostas.jpg", "images/personagens/principal_contratado.png", "images/personagens/principal_atendente_1.png", "images/personagens/principal_atendente_2.png", "images/personagens/principal_escovando_os_dentes.jpg", "images/personagens/principal_final.jpg"]
 image mae = "images/personagens/mae.png"
 image teto_do_quarto = "images/bg/teto do quarto.png"
 image espelho do banheiro = "images/bg/espelho do banheiro.png"
@@ -12,6 +12,8 @@ image clientemc = ["images/personagens/cliente1costas.png", "images/personagens/
 image cozinhamcdonalds = "images/bg/cozinhamcdonalds.png"
 image rua = "image/bg/rua.png"
 image escritorio = "image/bg/escritorio.png"
+image chefe = "image/personagens/chefe.png
+image homem_oferecendo_dinheiro = "image/personagens/homem_oferecendo_dinheiro.jpg"
 
 default passou_por_subescolha_clt = False
 default contratado = False
