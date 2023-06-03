@@ -7,24 +7,24 @@ label cena2:
 
         if passou_por_subescolha_clt == True and contratado == False:
             menu:
-                "Vender Bolo de Pote"
+                "Vender Bolo de Pote":
                     jump empreender
                 
-                "Terminar estudos"
+                "Terminar estudos":
                     jump estudo
                 
-                "pedir ajuda pros parça"
+                "pedir ajuda pros parça":
                     jump subescolha_crime
 
         elif passou_por_subescolha_clt == True and contratado == True:
             menu:
-                "Voltar ao trabalho"
+                "Voltar ao trabalho":
                     jump subescolha_clt
 
-                "Largar o trabalho pra terminar os estudos"
+                "Largar o trabalho pra terminar os estudos":
                     jump estudo
 
-                "Ir na onda do mano que ta tirando 5k por dia"
+                "Ir na onda do mano que ta tirando 5k por dia":
                     jump subescolha_crime
 
         else:
