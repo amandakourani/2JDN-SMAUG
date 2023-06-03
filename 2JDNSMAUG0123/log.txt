@@ -1,31 +1,111 @@
-Sun May  7 18:45:18 2023
+Sat Jun  3 20:35:26 2023
 Windows-10-10.0.19041
-Ren'Py 7.5.3.22090809
+Ren'Py 8.1.0.23051307
  
 
-Bootstrap to the start of init.init took 0.06s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.03s
-Loading script took 0.64s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
+Bootstrap to the start of init.init. took 0.04s
+Early init. took 0.02s
+Loader init. took 0.03s
+Loading error handling. took 0.04s
+Loading script. took 0.97s
+Loading save slot metadata. took 0.00s
+Loading persistent. took 0.00s
 
-File "game/cena1.rpy", line 1: expected 'label_name_declare' not found.
-    label: cena1
-         ^
+File "game/cena2.rpy", line 190: Indentation mismatch.
 
-File "game/cena2.rpy", line 8: expected 'label_name_declare' not found.
-    label menu:
-         ^
+File "game/cena3.rpy", line 78: Indentation mismatch.
 
-File "game/cena2.rpy", line 22: choice menuitem expects a non-empty block.
-    "Telemarketing":
-                    ^
+File "game/cena4.rpy", line 13: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    "Traficar":
+    ^
 
-File "game/cena2.rpy", line 37: choice menuitem expects a non-empty block.
-    "Matar":
-            ^
+File "game/cena4.rpy", line 35: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    jump proxima_fase
+    ^
+
+File "game/cena5.rpy", line 11: expected statement.
+    atualizar_saude(-15)
+                        ^
+
+File "game/cena5.rpy", line 18: expected statement.
+    atualizar_saude(-10)
+                        ^
+
+File "game/cena5.rpy", line 24: expected statement.
+    atualizar_saude(-15)
+                        ^
+
+File "game/cena6.rpy", line 10: expected statement.
+    atualizar_financeiro(-20)
+                             ^
+
+File "game/cena6.rpy", line 11: expected statement.
+    atualizar_saude(-10)
+                        ^
+
+File "game/cena6.rpy", line 14: expected statement.
+    atualizar_financeiro(-10)
+                             ^
+
+File "game/cena6.rpy", line 15: expected statement.
+    atualizar_saude(-5)
+                       ^
+
+File "game/cena6.rpy", line 19: expected statement.
+    atualizar_financeiro(-30)
+                             ^
+
+File "game/cena6.rpy", line 20: expected statement.
+    atualizar_saude(10)
+                       ^
+
+File "game/cena6.rpy", line 23: expected statement.
+    atualizar_financeiro(+20)
+                             ^
+
+File "game/cena6.rpy", line 24: expected statement.
+    atualizar_saude(-10)
+                        ^
+
+File "game/cena7.rpy", line 12: expected statement.
+    decrease_financial(50)
+                          ^
+
+File "game/cena7.rpy", line 13: expected statement.
+    decrease_health(20)
+                       ^
+
+File "game/cena7.rpy", line 14: expected statement.
+    decrease_family(20)
+                       ^
+
+File "game/cena7.rpy", line 17: expected statement.
+    decrease_family(10)
+                       ^
+
+File "game/cena8.rpy", line 10: expected statement.
+    increase_health(10)
+                       ^
+
+File "game/cena8.rpy", line 11: expected statement.
+    increase_financial(10)
+                          ^
+
+File "game/cena8.rpy", line 15: expected statement.
+    decrease_health(10)
+                       ^
+
+File "game/cena8.rpy", line 16: expected statement.
+    decrease_financial(10)
+                          ^
+
+File "game/cena8.rpy", line 25: expected statement.
+    end_game()
+              ^
+
+File "game/cena8.rpy", line 33: expected statement.
+    end_game()
+              ^
 
 File "game/introducao.rpy", line 4: end of line expected.
     with dissolve 1.0
@@ -35,36 +115,50 @@ File "game/introducao.rpy", line 6: end of line expected.
     with dissolve 2.5
                   ^
 
+File "game/script.rpy", line 22: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "INICIO"
+            ^
+
+File "game/script.rpy", line 32: expected statement.
+    function atualizar_financeiro(valor):
+                                 ^
+
+File "game/script.rpy", line 36: expected statement.
+    function atualizar_mental(valor):
+                             ^
+
+File "game/script.rpy", line 40: expected statement.
+    function atualizar_fisica(valor):
+                             ^
+
 File "game/start_menu.rpy", line 3: is not terminated with a newline. (Check strings and parenthesis.)
 (Perhaps you left out a " at the end of the first line.)
     image bgstart =image/bg/startmenu.png"
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Interface start took 0.12s
 
-Initializing gl renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) Iris(R) Xe Graphics'
-Version: '4.6.0 - Build 30.0.101.1692'
-Display Info: None
-Number of texture units: 32
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 16384
-- 64px textures work.
-- 128px textures work.
-- 256px textures work.
-- 512px textures work.
-- 1024px textures work.
-- 2048px textures work.
-Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
+File "game/volta_pra_casa.rpy", line 4: expected statement.
+    dia = dia+1
+        ^
+
+File "game/volta_pra_casa.rpy", line 12: expected statement.
+    atualizar_financeiro(-10)
+                             ^
+
+File "game/volta_pra_casa.rpy", line 14: expected statement.
+    atualizar_financeiro(-10)
+                             ^
+
+File "game/volta_pra_casa.rpy", line 18: expected statement.
+    atualizar_financeiro(salario)
+                                 ^
+
+File "game/volta_pra_casa.rpy", line 20: expected statement.
+    atualizar_financeiro(-5)
+                            ^
+
+File "game/volta_pra_casa.rpy", line 22: expected statement.
+    atualizar_financeiro(-5)
+                            ^
+
+File "game/volta_pra_casa.rpy", line 24: expected statement.
+    atualizar_financeiro(-20)
+                             ^
