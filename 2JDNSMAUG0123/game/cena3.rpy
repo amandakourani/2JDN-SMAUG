@@ -78,28 +78,28 @@ label empreender:
    label terminar_estudos:
     # Ação a ser executada quando a opção "Terminar os estudos" for escolhida
 
-    scene faculdade
-    show principal[1] in left
+        scene faculdade
+        show principal[1] in left
 
-    narrator "Você decide terminar os estudos e se dedicar ao seu crescimento acadêmico."
-    pause 0.5
+        narrator "Você decide terminar os estudos e se dedicar ao seu crescimento acadêmico."
+        pause 0.5
 
-    # Reduz a saúde mental do p1 devido à preocupação com a saúde da mãe
-    atualizar_saude_mental(-15)
+        # Reduz a saúde mental do p1 devido à preocupação com a saúde da mãe
+        atualizar_saude_mental(-15)
 
-    scene casa
-    show principal[1] in left
+        scene casa
+        show principal[1] in left
 
-    narrator "Enquanto você se dedica aos estudos, a saúde da sua mãe continua piorando."
-    pause 0.5
+        narrator "Enquanto você se dedica aos estudos, a saúde da sua mãe continua piorando."
+        pause 0.5
 
-    # Reduz ainda mais a saúde mental do p1 devido à preocupação contínua
-    atualizar_saude_mental(-10)
+        # Reduz ainda mais a saúde mental do p1 devido à preocupação contínua
+        atualizar_saude_mental(-10)
 
-    scene hospital
-    show principal[1] in left
+        scene hospital
+        show principal[1] in left
 
-    narrator "Você visita sua mãe no hospital e se sente impotente por não poder ajudá-la financeiramente."
-    pause 0.5
+        narrator "Você visita sua mãe no hospital e se sente impotente por não poder ajudá-la financeiramente."
+        pause 0.5
 
-    jump volta_pra_casa
+        jump volta_pra_casa
