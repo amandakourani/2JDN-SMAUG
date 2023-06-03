@@ -98,6 +98,7 @@ label subescolha_clt:
                                 clientemc "Perfeito, aqui está o dinheiro."
                                 clientemc "Obrigada, até mais!"
                                 hide clientemc
+                                
                             
                             else:
                                 valor_sanduiche = renpy.random.randint(15, 25)                            
@@ -159,7 +160,7 @@ if dia == 1:
                                 show clientemultilaser[renpy.random.randint(0,6)] at left
 
                                 # diálogo
-                                principal "Central de Relacionamento, Multilaser! Bom dia, como posso te ajudar?"
+                                principal "Central de Relacionamento, PoneiLaser! Bom dia, como posso te ajudar?"
                                 clientemultilaser "Olá, então comprei um mouse e ele parou de funcionar"
                                 principal "Certo! Vou fazer algumas perguntas padrões, para descobrirmos o que ocorreu e seguir com a melhor forma de garantia. O produto sofreu queda ou teve contato com água?"
                                 clientemultilaser "Não, inclusive já fiz os testes do site, e ele continua sem funcionar."

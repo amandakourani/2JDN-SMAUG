@@ -1,7 +1,7 @@
 ﻿
 # Declarando imagens e background
 image ia = "images/personagens/ia.png"
-image principal = ["images/personagens/principal.png", "images/personagens/principaldecostas.png", "image/personagens/principalentrevistado.png"]
+image principal = ["images/personagens/principal.png", "images/personagens/principaldecostas.png", "image/personagens/principalentrevistado.png", "image/personagens/principalcozinhamc.png"]
 image mae = "images/personagens/mae.png"
 image teto do quarto = "images/bg/teto do quarto.png"
 image espelho do banheiro = "images/bg/espelho do banheiro.png"
