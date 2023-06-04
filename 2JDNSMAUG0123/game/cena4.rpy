@@ -13,13 +13,21 @@ label subescolha_crime:
             "Traficar":
                 # Ação a ser executada quando a opção "Traficar" for escolhida
     menu:
-        "1. Roubar. (+500 na carteira, -50 na saúde)":
-            $ carteira += 500
-            $ saude -= 50
-            jump resultado_matar
+        "1. Roubar. (+500 no financeiro, -50 na mental)":
+           
+            atualizar_financeiro(500)
+            $ financeiro += 500,
+            atualizar_mental(-50)
+            $ saude += -50,
+
+            jump resultado_roubar
+
         "2. Traficar. (+300 na carteira, -20 na saúde)":
-            $ carteira += 300
-            $ saude -= 20
+
+            atualizar_financeiro(300)
+            $ financeiro += 300,
+            atualizar_mental(-20)
+            $ mental += -20
             jump resultado_traficar
 
 label resultado_roubar:

@@ -2,16 +2,18 @@ label empreender:
     # Ação a ser executada quando a opção "Vender Bolo de Pote" for escolhida
     
     scene rua
-    show principal[1] in left
+    show principal[0] in left
     
     narrator "Você decide empreender e vender bolos de pote."
     pause 0.5
     
     # Reduz a saúde do principal devido ao desgaste físico e falta de sono
-    atualizar_saude(-10)
+    atualizar_fisico(-10)
+    $ fisico += -10,
     
     # Aumenta o valor financeiro do principal devido às vendas
     atualizar_financeiro(15)
+    $ financeiro += 15,
     
     scene rua
     show principal[1] in left
@@ -20,10 +22,11 @@ label empreender:
     pause 0.5
     
     # Reduz ainda mais a saúde do principal devido ao esforço físico constante
-    atualizar_saude(-5)
+    atualizar_fisico(-5)
+    $ fisico += -5,
     
     scene casa
-    show principal[1] in left
+    show principal[0] in left
     
     narrator "Você trabalha duro todos os dias na produção dos bolos e na venda."
 
@@ -32,20 +35,20 @@ label empreender:
     pause 0.5
     
     scene rua
-    show principal[1] in left
+    show principal[0] in left
     
     principal "Estou quebrado, trabalhando muito e recebendo pouco. Mas bora, vou seguir, é melhor que nada."
     pause 0.5
     
     scene rua
-    show principal[1] in left
+    show principal[0] in left
     
     menu:
         "Continuar trabalhando na rua":
             # Ação a ser executada quando a opção "Continuar trabalhando na barraca" for escolhida
             
             scene rua noite
-            show principal[1] in left
+            show principal[0] in left
             
             ia "Continue trabalhando, o descanso não vai te trazer dinheiro, a única coisa que te traz dinheiro é o seu esforço!"
 
@@ -54,7 +57,8 @@ label empreender:
             pause 0.5
             
             # Reduz ainda mais a saúde do principal devido ao esforço físico constante
-            atualizar_saude(-10)
+            atualizar_fisico(-10)
+            $ fisico += -10,
             
             jump volta_pra_casa
         
@@ -62,7 +66,7 @@ label empreender:
             # Ação a ser executada quando a opção "Fechar a barraca e descansar um pouco" for escolhida
             
             scene rua tarde
-            show principal[1] in left
+            show principal[8] in left
             
             ia "NÃO ACREDITO QUE VOCÊ ESTÁ INDO EMBORA! TRABALHE ENQUANTO ELES DORMEM, TRABALHE ENQUANTO ELES DORMEM, TRABALHE ENQUANTO ELES DORMEM."
 
@@ -70,7 +74,8 @@ label empreender:
             pause 0.5
             
             # Aumenta a saúde do principal devido ao descanso
-            atualizar_saude(5)
+            atualizar_fisico(5)
+            $ fisico += 5,
             
             jump volta_pra_casa
 
@@ -85,16 +90,18 @@ label empreender:
         pause 0.5
 
         # Reduz a saúde mental do p1 devido à preocupação com a saúde da mãe
-        atualizar_saude_mental(-15)
+        atualizar_mental(-15)
+        $ mental += -15,
 
         scene casa
-        show principal[1] in left
+        show principal[0] in left
 
         narrator "Enquanto você se dedica aos estudos, a saúde da sua mãe continua piorando."
         pause 0.5
 
         # Reduz ainda mais a saúde mental do p1 devido à preocupação contínua
-        atualizar_saude_mental(-10)
+        atualizar_mental(-10)
+        $ mental += -10,
 
         scene hospital
         show principal[1] in left
