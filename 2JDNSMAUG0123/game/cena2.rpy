@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 label cena2:
     image rua = "image/bg/rua.png"
 
@@ -6,24 +6,23 @@ label cena2:
     show rua
     ia "sei que está triste mas não deixe a vida te abalar! Você ainda tem a oportunidade de desenhar seu próprio destino! A meritocracia americana pe maravilhosa, tanto que você pode escolher as opções a seguir: "
 
-    label menu:
+    label escolhamenu:
         menu:
             "CLT":
                 jump subescolha_clt
-
             "terminar estudo":
                 jump escola
-
             "entrar pro crime":
                 jump subescolha_crime
 
 
     label subescolha_clt:
         menu:
-            "Telemarketing":
+
+        "Telemarketing":
                 # Ação a ser executada quando a opção "Telemarketing" for escolhida
 
-            "Mcdonalds":
+        "Mcdonalds":
                 # Ação a ser executada quando a opção "Mcdonalds" for escolhida
 
 
