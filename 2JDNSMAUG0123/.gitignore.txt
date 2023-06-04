@@ -35,3 +35,5 @@
         ../ntuser.dat.LOG2
         ../ntuser.ini
         ../renpy-7.5.3-sdk/
+              ../errors.txt
+              ../log.txt

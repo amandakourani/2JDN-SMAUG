@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 label cena2:
    
     show rua
@@ -242,3 +243,4 @@ label subescolha_clt:
         jump suicidio
     else:
         jump continuar_jogo
+=======

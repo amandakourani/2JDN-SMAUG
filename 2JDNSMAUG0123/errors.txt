@@ -2,6 +2,7 @@
 errors listed below, and try again.
 
 
+<<<<<<< HEAD
 File "game/cena2.rpy", line 190: Indentation mismatch.
 
 File "game/cena3.rpy", line 78: Indentation mismatch.
@@ -97,6 +98,23 @@ File "game/cena8.rpy", line 25: expected statement.
 File "game/cena8.rpy", line 33: expected statement.
     end_game()
               ^
+=======
+File "game/cena1.rpy", line 1: expected 'label_name_declare' not found.
+    label: cena1
+         ^
+
+File "game/cena2.rpy", line 8: expected 'label_name_declare' not found.
+    label menu:
+         ^
+
+File "game/cena2.rpy", line 22: choice menuitem expects a non-empty block.
+    "Telemarketing":
+                    ^
+
+File "game/cena2.rpy", line 37: choice menuitem expects a non-empty block.
+    "Matar":
+            ^
+>>>>>>> 7de32323875c617d2330b7a5d5cdce043047833a
 
 File "game/introducao.rpy", line 4: end of line expected.
     with dissolve 1.0
@@ -106,6 +124,7 @@ File "game/introducao.rpy", line 6: end of line expected.
     with dissolve 2.5
                   ^
 
+<<<<<<< HEAD
 File "game/script.rpy", line 22: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
     "INICIO"
             ^
@@ -122,10 +141,13 @@ File "game/script.rpy", line 40: expected statement.
     function atualizar_fisica(valor):
                              ^
 
+=======
+>>>>>>> 7de32323875c617d2330b7a5d5cdce043047833a
 File "game/start_menu.rpy", line 3: is not terminated with a newline. (Check strings and parenthesis.)
 (Perhaps you left out a " at the end of the first line.)
     image bgstart =image/bg/startmenu.png"
 
+<<<<<<< HEAD
 File "game/volta_pra_casa.rpy", line 4: expected statement.
     dia = dia+1
         ^
@@ -156,3 +178,7 @@ File "game/volta_pra_casa.rpy", line 24: expected statement.
 
 Ren'Py Version: Ren'Py 8.1.0.23051307
 Sat Jun  3 20:35:27 2023
+=======
+Ren'Py Version: Ren'Py 8.1.0.23051307
+Sat Jun  3 18:37:26 2023
+>>>>>>> 7de32323875c617d2330b7a5d5cdce043047833a

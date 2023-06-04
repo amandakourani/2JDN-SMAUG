@@ -1,0 +1,138 @@
+[33mcommit de8655eb857687e7362aee2fd23ee45a57afb3aa[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Amanda Kourani <amanda.kourani@portobello.com.br>
+Date:   Sun Jun 4 12:21:49 2023 -0300
+
+    mais algumas alterações
+
+[33mcommit dafac724f3f9c45f6653fe2ca52b04590a88190b[m
+Author: Amanda Kourani <amanda.kourani@portobello.com.br>
+Date:   Sun Jun 4 12:04:44 2023 -0300
+
+    começando a arrumar telemarketing e ajustes de declaração de variáveis
+
+[33mcommit 5392e3d3c5cf3dd765993dee977e9670efeae462[m
+Author: Amanda Kourani <amanda.kourani@portobello.com.br>
+Date:   Sat Jun 3 21:39:15 2023 -0300
+
+    arrumando identações e demais pequenos ajustes
+
+[33mcommit c357e4e6bcb813b08ed3be0b3d0bee9d0d5e1c92[m
+Author: Amanda Kourani <amanda.kourani@portobello.com.br>
+Date:   Sat Jun 3 20:56:32 2023 -0300
+
+    arrumando conflito da linha de declaração do personage, principal
+
+[33mcommit 2f2520937ce88c0cc275c3d58cb5ccfc80d62646[m
+Merge: cd8155f ceb87ad
+Author: Lais Cardoso <thereisamindthatnevergoesout@gmail.com>
+Date:   Sat Jun 3 20:50:37 2023 -0300
+
+    subi as imagens, renomeei e identifiquei
+
+[33mcommit cd8155f335728d94d5edb05f321e478653d67878[m
+Author: Lais Cardoso <thereisamindthatnevergoesout@gmail.com>
+Date:   Sat Jun 3 20:48:45 2023 -0300
+
+    subi as imagens, renomeei e identifiquei
+
+[33mcommit ceb87adf34c275dbaa4f1fa0bce91e15a07d9ab4[m
+Author: Amanda Kourani <amanda.kourani@portobello.com.br>
+Date:   Sat Jun 3 20:47:00 2023 -0300
+
+    arrumando identação telemarketing
+
+[33mcommit 48f4522bdbad94f9bcb998761a0066ad5912af45[m
+Author: Lais Cardoso <thereisamindthatnevergoesout@gmail.com>
+Date:   Sat Jun 3 20:45:59 2023 -0300
+
+    subi as imagens, renomeei e identifiquei
+
+[33mcommit 7b5600e26d666f7eff9d89eb070ed1c4feb8d09f[m
+Author: Amanda Kourani <amanda.kourani@portobello.com.br>
+Date:   Sat Jun 3 20:33:40 2023 -0300
+
+    umas arrumadinhas simples
+
+[33mcommit 830f9ee2d34cafbd116b263da086d1386720bda6[m
+Author: Amanda Kourani <amanda.kourani@portobello.com.br>
+Date:   Sat Jun 3 19:44:56 2023 -0300
+
+    arrumando dois pontos das subescolhas
+
+[33mcommit cc0560d4db714d278f7904b93a80d1a3d79896d1[m
+Author: Amanda Kourani <amanda.kourani@portobello.com.br>
+Date:   Sat Jun 3 19:40:19 2023 -0300
+
+    arrumando erros de sintaxe
+
+[33mcommit 89c8e7e758277225be16f3734af5a0c29b26e9af[m
+Author: Lais Cardoso <thereisamindthatnevergoesout@gmail.com>
+Date:   Sat Jun 3 19:13:41 2023 -0300
+
+    cena 2 alterada, adicionadas as cenas 3, 4, 5, 6, 7 e 8
+
+[33mcommit af77df1cc5285128546d760b3d626a8a50cb234b[m
+Author: alexonribeiro <135395166+alexonribeiro@users.noreply.github.com>
+Date:   Sat Jun 3 18:01:00 2023 -0300
+
+    Update cena2.rpy
+
+[33mcommit 00089484b6d3d88b3ca60c5784e038cb242c3893[m
+Author: Amanda Kourani <amanda.kourani@portobello.com.br>
+Date:   Fri Jun 2 20:17:07 2023 -0300
+
+    erro do dois pontos
+
+[33mcommit 10d7b7d9c87324d504759cc2c0fd110217ac66aa[m
+Author: Amanda Kourani <amanda.kourani@portobello.com.br>
+Date:   Fri Jun 2 19:58:05 2023 -0300
+
+    separandinho
+
+[33mcommit d4fb2b5efb2b75584738a7b7063024b8ae3064f8[m
+Author: Amanda Kourani <amanda.kourani@portobello.com.br>
+Date:   Tue May 16 18:03:13 2023 -0300
+
+    add imagens
+
+[33mcommit 424afed2d162f741b029b8c38c63ff359780419b[m
+Author: Amanda Kourani <amanda.kourani@portobello.com.br>
+Date:   Mon May 8 18:40:19 2023 -0300
+
+    aprimorando primeiro dia no mcdonalds
+
+[33mcommit 64d3fe6c333f4ad1b4eb1b1479c91c371e85e2bb[m
+Author: Amanda Kourani <amanda.kourani@portobello.com.br>
+Date:   Mon May 8 17:48:07 2023 -0300
+
+    mudando pra branch main
+
+[33mcommit 6f73eec68f77d8a69fc1fb00c37d53265812b899[m
+Author: Amanda Kourani <amanda.kourani@portobello.com.br>
+Date:   Mon May 8 17:41:16 2023 -0300
+
+    aprimorando trabalho mcdonalds
+
+[33mcommit 96f3ec7e1a3abd8f27786e148eb7cbe8ca6b439b[m
+Author: Amanda Kourani <amanda.kourani@portobello.com.br>
+Date:   Sun May 7 22:52:40 2023 -0300
+
+    trabalhando mais nas opçoes da cena 1
+
+[33mcommit 117e62cd8e42d11c6cacddad22b61eb8599bda23[m
+Author: Amanda de Almeida Kourani <amanda.kourani@portobellonet.local>
+Date:   Sun May 7 20:25:57 2023 -0300
+
+    troca cena1 pra introducao no startmenu
+
+[33mcommit 5398d745f18b698f61c789f315bfc9661abe206c[m
+Author: Amanda de Almeida Kourani <amanda.kourani@portobellonet.local>
+Date:   Sun May 7 20:04:02 2023 -0300
+
+    aprimorações
+
+[33mcommit 459d7985a0182bc63f57789a0f9c7ebe609424c1[m
+Author: Amanda de Almeida Kourani <amanda.kourani@portobellonet.local>
+Date:   Sun May 7 18:12:25 2023 -0300
+
+    primeiro commit

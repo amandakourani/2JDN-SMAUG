@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"error": true, "size": [1920, 1080], "name": "", "version": "", "location": {"label": {"cena1": ["game/cena1.rpy", 1]}, "define": {}, "screen": {}, "transform": {}, "callable": {}}}
+=======
+{"error": true, "size": [1920, 1080], "name": "", "version": "", "location": {"label": {"start": ["game/script.rpyc", 11]}, "define": {}, "screen": {}, "transform": {}, "callable": {}}}
+>>>>>>> 7de32323875c617d2330b7a5d5cdce043047833a
