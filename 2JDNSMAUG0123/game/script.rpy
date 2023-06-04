@@ -35,18 +35,22 @@ jump start_menu
 
 # Função para atualizar a variável financeira
 function atualizar_financeiro(valor):
-    $ financeira += valor
+    $ financeiro += valor
 
 # Função para atualizar a variável mental
 function atualizar_mental(valor):
     $ mental += valor
 
 # Função para atualizar a variável fisica
-function atualizar_fisica(valor):
-    $ fisica += valor
+function atualizar_fisico(valor):
+    $ fisico += valor
 
+# Função para atualizar a variável familia
+function atualizar_familia(valor):
+    $ familia += valor
 #DEFININDO AS VARIAVEIS GLOBAIS
 
-default fisica = 75
+default fisico = 75
 default mental = 65
-default financeira = 40
+default financeiro = 40
+default familia = 80

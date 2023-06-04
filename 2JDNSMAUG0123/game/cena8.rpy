@@ -1,19 +1,23 @@
 label luta_continua:
 
     scene rua_movimentada
-    show principal[determinado, cuidado] in center
+    show principal[13] in center
     
     narrator "Você está lutando para sobreviver e cuidar da sua família. A luta de classes é dura, mas você está disposto a enfrentar todos os desafios."
     
     menu:
         "Continuar trabalhando duro e cuidando da saúde":
-            increase_health(10)
-            increase_financial(10)
+            atualizar_mental(10)
+            $ mental += 10,
+            atualizar_financeiro(10)
+            $ mental += 10,
             jump final_cansado_onibus
         
         "Desistir e perder a esperança":
-            decrease_health(10)
-            decrease_financial(10)
+            atualizar_mental(-10)
+            $ mental += -10,
+            atualizar_financeiro(-10)
+            $ financeiro += - 10,
             jump final_desacordado
 
 label final_cansado_onibus:
