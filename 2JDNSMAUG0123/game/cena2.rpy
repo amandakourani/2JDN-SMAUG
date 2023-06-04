@@ -129,7 +129,7 @@ label subescolha_clt:
                         scene mcdonalds
                         show principal[x] in left
 
-                        narrator "É seu {i} dia, você sabe o suficiente. Cozinha!"
+                        narrator f"É seu {i} dia, você sabe o suficiente. Cozinha!"
                         scene black
                         pause 0.5
 
@@ -188,22 +188,22 @@ label subescolha_clt:
 
                         ia "Mais um dia maravilhosos concluído! Já posso sentir o cheiro do sucesso emanando de você!"
 
-                         atualizar_fisica(-4)
+                        atualizar_fisica(-4)
 
                         jump volta_pra_casa
 
-                    if dia >= 1 and dia <=4:
-                        scene telemarketing
-                        show principal[x] in left
+                elif dia >= 1 and dia <=4:
+                    scene telemarketing
+                    show principal[x] in left
 
-                        narrator "É seu {i} dia, você sabe o suficiente. Agora vai atender telefone e chat!"
-                        scene black
-                        pause 0.5
+                    narrator "É seu {i} dia, você sabe o suficiente. Agora vai atender telefone e chat!"
+                    scene black
+                    pause 0.5
 
-                        scene sac
-                        show principal[x] in left
+                    scene sac
+                    show principal[x] in left
 
-                        for i in range(2):
+                    for i in range(2):
             if i == 1:
                 show principal normal at right
                 chefe "Você precisa trabalhar mais rápido, tem muitos clientes na fila, puxa mais um!"
@@ -211,12 +211,12 @@ label subescolha_clt:
                 menu:
                     "Trabalhar mais rápido e ficar até mais tarde para ajudar a central a zerar a fila. (+10 em financeiro, -5 em saúde)":
                         # Ação a ser executada quando a opção "Trabalhar mais rápido" for escolhida
-                        atualizar_financeiro(10)
-                        atualizar_saude(-5)
+                    atualizar_financeiro(10)
+                    atualizar_mental(-5)
 
                     "Recusar a pressão do chefe e manter o ritmo normal. (+5 em saúde)":
                         # Ação a ser executada quando a opção "Manter o ritmo normal" for escolhida
-                        atualizar_saude(5)
+                    atualizar_mental(5)
 
                 hide chefe
 
