@@ -1,8 +1,8 @@
 ﻿
 # Declarando imagens e background
 image ia = "images/personagens/ia.png"
-<<<<<<< HEAD
 image principal = ["images/personagens/principal_normal.png", "images/personagens/principal_desesperado.png", "images/personagens/principal_dor_de_cabeca.png", "images/personagens/principal_nervoso.png", "images/personagens/principal_entrevista.png", "images/personagens/principal_demitido.png", "images/personagens/principal_cozinhando.png", "images/personagens/principal_uniforme.png", "images/personagens/principaldecostas.jpg", "images/personagens/principal_contratado.png", "images/personagens/principal_atendente_1.png", "images/personagens/principal_atendente_2.png", "images/personagens/principal_escovando_os_dentes.jpg", "images/personagens/principal_final.jpg"]
+<<<<<<< HEAD
 =======
 image principal = ["images/personagens/principal.png", "images/personagens/principaldecostas.png", "image/personagens/principalentrevistado.png", "image/personagens/principalcozinhamc.png"]
 >>>>>>> ceb87adf34c275dbaa4f1fa0bce91e15a07d9ab4
@@ -11,24 +11,31 @@ image teto_do_quarto = "images/bg/teto do quarto.png"
 image sala_de_estar = "images/bg/sala_de_estar.png"
 image teto do quarto = "images/bg/teto do quarto.png"
 image bgstart = ["image/bg/menu_choices_op1.png", "image/bg/menu_choices_op2.png"]
+=======
+image mae = "images/personagens/mae.png"
+image teto_do_quarto = "images/bg/teto do quarto.png"
+image espelho_do_banheiro = "images/bg/espelho do banheiro.png"
+image sala_de_estar = "images/bg/sala de estar.png"
+image teto_do_quarto = "images/bg/teto do quarto.png"
+image bgstart = "image/bg/startmenu.png"
+>>>>>>> de8655eb857687e7362aee2fd23ee45a57afb3aa
 image clientemc = ["images/personagens/cliente1costas.png", "images/personagens/cliente2costas.png", "images/personagens/cliente3costas.png"]
 image cozinhamcdonalds = "images/bg/cozinhamcdonalds.png"
 image rua = ["image/bg/centro_cidade_1.jpg", "image/bg/centro_da_cidade_2.jpg"]
 image escritorio = "image/bg/escritorio_baguncado.jpeg"
 image chefe = "image/personagens/chefe.png
 image homem_oferecendo_dinheiro = "image/personagens/homem_oferecendo_dinheiro.jpg"
+image clientemultilaser = "image/personagens/telefonemultilaser.jpg"
 
-default passou_por_subescolha_clt = False
-default contratado = False
-default dia = 0
+
 
 label start_menu:
     menu:
-        "INICIO"
+        "INICIO":
             jump introducao
-        "REALIZADORES"
+        "REALIZADORES":
             jump creditos
-        "SOBRE O JOGO"
+        "SOBRE O JOGO":
             jump sobre
 
 jump start_menu
@@ -52,5 +59,15 @@ function atualizar_familia(valor):
 
 default fisico = 75
 default mental = 65
+<<<<<<< HEAD
 default financeiro = 40
 default familia = 80
+=======
+default financeira = 40
+default empregado = ""
+default tramporandom = ""
+default salario = 0
+default passou_por_subescolha_clt = False
+default contratado = False
+default dia = 0
+>>>>>>> de8655eb857687e7362aee2fd23ee45a57afb3aa
