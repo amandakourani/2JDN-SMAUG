@@ -6,16 +6,15 @@ image principal = ["images/personagens/principal_normal.png", "images/personagen
 =======
 image principal = ["images/personagens/principal.png", "images/personagens/principaldecostas.png", "image/personagens/principalentrevistado.png", "image/personagens/principalcozinhamc.png"]
 >>>>>>> ceb87adf34c275dbaa4f1fa0bce91e15a07d9ab4
-image mae = "images/personagens/mae.png"
+image mae = ["images/personagens/mae.png", "images/bg/mae_acamada.jpg"]
 image teto_do_quarto = "images/bg/teto do quarto.png"
-image espelho do banheiro = "images/bg/espelho do banheiro.png"
-image sala de estar = "images/bg/sala de estar.png"
+image sala_de_estar = "images/bg/sala_de_estar.png"
 image teto do quarto = "images/bg/teto do quarto.png"
-image bgstart = "image/bg/startmenu.png"
+image bgstart = ["image/bg/menu_choices_op1.png", "image/bg/menu_choices_op2.png"]
 image clientemc = ["images/personagens/cliente1costas.png", "images/personagens/cliente2costas.png", "images/personagens/cliente3costas.png"]
 image cozinhamcdonalds = "images/bg/cozinhamcdonalds.png"
-image rua = "image/bg/rua.png"
-image escritorio = "image/bg/escritorio.png"
+image rua = ["image/bg/centro_cidade_1.jpg", "image/bg/centro_da_cidade_2.jpg"]
+image escritorio = "image/bg/escritorio_baguncado.jpeg"
 image chefe = "image/personagens/chefe.png
 image homem_oferecendo_dinheiro = "image/personagens/homem_oferecendo_dinheiro.jpg"
 

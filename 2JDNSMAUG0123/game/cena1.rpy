@@ -6,12 +6,12 @@ label cena1:
     show teto do quarto
     with dissolve(dissolve_time=0.5)  # dissolve rápido
 
-    show espelho do banheiro #ele se ve escovando os dentes
+    show principal[12] #ele se ve escovando os dentes
     with dissolve(dissolve_time=0.5)  # dissolve rápido
 
-    show sala de estar
-    show mae in left
-    show principal[1] in right
+    show sala_de_estar
+    show mae[0] in left
+    show principal[0] in right
 
     mae "chegou o moço de novo, tive que despistá-lo dessa vez"
     ia "sua conta de luz já passou de 60 dias de atraso"
