@@ -137,14 +137,15 @@ label subescolha_clt:
                         show principal[x] in left
 
             elif tramporandom == "telemarketing":
-                                #$ salario = renpy.random.randint(1300, 1600)
-                                #Aqui faz o codigo do telemarketing
+                    
+                $ salario = renpy.random.randint(1300, 1600)
+                #Aqui faz o codigo do telemarketing
 
-                if dia == 1:
+                if dia >=5 :
                     scene telemarketing
                     show principal[x] in left
 
-                    narrator "É seu primeiro dia, você será atendente SAC."
+                    narrator "Você será atendente SAC."
                     pause 0.5
 
                     for i in range(2):
@@ -156,7 +157,7 @@ label subescolha_clt:
                             show principal normal at right
 
                             #atende sua primeira ligação
-                            show clientemultilaser[renpy.random.randint(0,6)] at left
+                            show clientemultilaser at left
 
                             # diálogo
                             principal "Central de Relacionamento, PoneiLaser! Bom dia, como posso te ajudar?"
@@ -167,22 +168,24 @@ label subescolha_clt:
                             clientemultilaser "Perfeito, muito obrigado! Tenha um ótimo dia."
                             hide clientemultilaser
 
+                            show principal[x] normal at right
+                            chefe "Você precisa trabalhar mais rápido, tem muitos clientes na fila, puxa mais um!"
 
                             # principal aparece na esquerda
                             show principal normal at left
 
                             #atende sua terceira ligação do dia
-                            show clientemultilaserputo[renpy.random.randint(0,6)] at right
+                            show clientemultilaser at right
 
                             # diálogo
                             principal "Central de Relacionamento, Multilaser! Bom dia, como posso ajudar?"
-                            clientemultilaserputo "Péssimo dia, escuta aqui, comprei o tablet de vocês à 3 meses para dar pra minha filha e a bateria desta porcaria, inchou tanto que está a ponto de explodir, e aí vai fazer o que?"
+                            clientemultilaser "Péssimo dia, escuta aqui, comprei o tablet de vocês à 3 meses para dar pra minha filha e a bateria desta porcaria, inchou tanto que está a ponto de explodir, e aí vai fazer o que?"
                             principal f"Ok senhor, pode ficar tranquilo pois..."
-                            clientemultilaserputo "Tranquilo??? Como você me quer tranquilo com uma situação dessas, eu quero meu dinheiro de volta!"
+                            clientemultilaser "Tranquilo??? Como você me quer tranquilo com uma situação dessas, eu quero meu dinheiro de volta!"
                             principal "Senhor, peço que mantenha a calma pois estou tentando auxiliá-lo."
-                            clientemultilaserputo "Já vi que aqui não vou resolver nada, pode deixar que vou no Procon e no Celso Russomano."
+                            clientemultilaser "Já vi que aqui não vou resolver nada, pode deixar que vou no Procon e no Celso Russomano."
                             principal "Senhor..."
-                            telefone "tu.tu.tu.tu.tu.tu.tu"
+                            clientemultilaser "tu.tu.tu.tu.tu.tu.tu"
                             atualizar_mental(-8)
                             hide clientemultilaserputo
 
@@ -192,7 +195,7 @@ label subescolha_clt:
 
                         jump volta_pra_casa
 
-                elif dia >= 1 and dia <=4:
+                elif dia == 5:
                     scene telemarketing
                     show principal[x] in left
 
@@ -205,7 +208,7 @@ label subescolha_clt:
 
                     for i in range(2):
             if i == 1:
-                show principal normal at right
+                show principal[x] normal at right
                 chefe "Você precisa trabalhar mais rápido, tem muitos clientes na fila, puxa mais um!"
 
                 menu:
